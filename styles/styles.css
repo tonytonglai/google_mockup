@@ -1,15 +1,32 @@
-header {
+body {
+    font-size: 16px;
+    color:rgba(0,0,0,0.87);
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* header {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-}
+} */
 
 header li:hover{
     text-decoration: underline;
 }
 
-ul > li {
-    display: inline-block;
+#blank {
+    grid-column: 3/9;
 }
+/* ul > li {
+    display: inline-block;
+} */
+
+
+ul {
+    margin: 20px 0px 200px 0px; /* top, right, bottom. left*/
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    justify-items: center;
+}
+
 #google-img {
     display: block;
     margin: 0 auto;
@@ -17,3 +34,20 @@ ul > li {
     width: auto;
 }
 
+#searchbar form{
+    margin: 50px 0px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+#searchbar input{
+    grid-column: 2/5;
+    height: 4em;
+    border-radius: 500px;
+    transform: scaleX(0.6);
+    border-color: lightgray;
+}
+
+#searchbar input:hover {
+    box-shadow: 5px 5px gray;
+}
