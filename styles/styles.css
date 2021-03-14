@@ -38,6 +38,7 @@ ul {
     margin: 50px 0px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, auto);
 }
 
 #searchbar input{
@@ -49,5 +50,18 @@ ul {
 }
 
 #searchbar input:hover {
-    box-shadow: 5px 5px gray;
+    box-shadow: 0px 0px 3px 2px lightgray;
+}
+
+#buttons {
+    grid-row: 2/2;
+    grid-column: 3/4;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+#buttons button {
+    padding: 0px 16px;
+    line-height: 27px;
+    justify-self: center;
 }
