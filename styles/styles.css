@@ -1,0 +1,19 @@
+header {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+header li:hover{
+    text-decoration: underline;
+}
+
+ul > li {
+    display: inline-block;
+}
+#google-img {
+    display: block;
+    margin: 0 auto;
+    max-height: 130px;
+    width: auto;
+}
+
